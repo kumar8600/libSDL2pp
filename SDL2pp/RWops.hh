@@ -80,8 +80,8 @@ public:
 
 	RWops(const RWops&) = delete;
 	RWops& operator=(const RWops&) = delete;
-	RWops(RWops&& other) noexcept;
-	RWops& operator=(RWops&& other) noexcept;
+	RWops(RWops&& other) NOEXCEPT;
+	RWops& operator=(RWops&& other) NOEXCEPT;
 
 	template<class C>
 	RWops(C&& custom_rwops) {
